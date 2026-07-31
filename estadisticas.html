@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas VideoClub</title>
+    <script src="./dominio/memoria.js"></script>
+    <script src="./dominio/videoclub.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+</head>
+<body onload="CargoDatosEstadisticas()">
+    <center>
+        <div class="titulo-cinecito"> 
+        <h1>Cinecito</h1>
+        </div>
+        <div class="nombre">
+        <h2>No olvides rebobinar</h2>
+        </div>
+        <a href="./principal.html">Principal</a>
+        <form id="dep">
+            <h3 class="titulo">Estadísticas</h3>
+            <section>
+                <div class="campos">
+                    <label for="totalRecaudado">Total recaudado: </label>
+                    <input type="text" id="totalRecaudado" disabled>
+
+                    <label for="masAlquilada">Pelicula más alquilada: </label>
+                    <input type="text" id="masAlquilada" disabled>
+
+                    <label for="mejorFuncionario">Mejor funcionario: </label>
+                    <input type="text" id="mejorFuncionario" disabled>
+                    
+                </div>
+                <div class="botones">
+                    <!-- <input class="btn_agregar" type="button" value="Agregar" onclick="AgregarVendedor()">
+                    <input class="btn_modificar" type="button" value="Modificar" onclick="ModificarVendedor()">
+                    <input class="btn_eliminar" type="button" value="Eliminar" onclick="EliminarVendedor()">
+                    <input class="btn_limpiar" type="button" value="Limpiar" onclick="InicializarVendedor()"> -->
+                </div>
+            </section>
+        </form>
+
+        <div class="listado">
+            <br>
+            <label>Peliculas con Stock:</label>
+            <br><br>
+            <select id="peliculas-con-stock" size="6"></select>
+        </div>
+    </center>
+</body>
+<footer>
+    <p>© 2026 - Proyecto de Analista Programador</p>
+    <p>Dirección: Rincón 232 - Rosario</p>
+</footer>
+</html>
