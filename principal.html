@@ -1,71 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinecito</title>
-    <script src="./js/services/videoclub.js"></script>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 script-src 'self' https://cdn.jsdelivr.net;
+                 style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+                 font-src https://fonts.gstatic.com;
+                 img-src 'self' data:;
+                 connect-src 'self' https://api.tvmaze.com;">
+    <title>Cinecito - Videoclub</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> -->
 </head>
+
 <body>
-    <center>
+    <header class="text-center">
         <div class="titulo-cinecito">
-        <h1>Cinecito</h1>
+            <h1>Cinecito</h1>
         </div>
         <div class="nombre">
-        <h2>No olvides rebobinar</h2>
-        </div>
-        <br>
-        <br>
-        <div class="inicio"> 
-        <a href="./pelicula.html">Peliculas</a>
-        <a href="./funcionarios.html">Funcionarios</a>
-        <a href="./alquileres.html">Alquileres</a>
-        <a href="./estadisticas.html">Estadísticas</a>
-        </div>
-    </center>
-    <main>
-        <div class="cartelera">
-        <h3>Cartelera</h3>
-        </div>
-        <ul class="lista-peliculas">
-            <li>
+            <h2>No olvides rebobinar</h2></div>
+
+        <nav class="inicio" aria-label="Navegación principal">
+            <a href="./pelicula.html">Películas</a>
+            <a href="./funcionarios.html">Funcionarios</a>
+            <a href="./alquileres.html">Alquileres</a>
+            <a href="./estadisticas.html">Estadísticas</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h3 class="cartelera">Cartelera</h3>
+
+        <ul class="lista-peliculas row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 list-unstyled">
+            <li class="col">
                 <h3>Volver al futuro (1985)</h3>
-                <img src="./imagenes/Volver al futuro.jpg.jpeg" alt="poster volver al futuro" style=width:250px >
+                <img src="./imagenes/Volver al futuro.jpg.jpeg" alt="Póster de la película Volver al futuro" class="img-fluid rounded" loading="lazy">
             </li>
-            <br><br>
-            <li>
+            <li class="col">
                 <h3>Titanic (1997)</h3>
-                <img src="./imagenes/Titanic.jpg.jpeg" alt="poster de titanic" style=width:250px>
+                <img src="./imagenes/Titanic.jpg.jpeg" alt="Póster de la película Titanic" class="img-fluid rounded" loading="lazy">
             </li>
-            <br><br>
-            <li>
+            <li class="col">
                 <h3>Star Wars (1977)</h3>
-                <img src="./imagenes/StarWars.jpg.jpeg" alt="poster de stars wars" style=width:250px>
+                <img src="./imagenes/StarWars.jpg.jpeg" alt="Póster de la película Star Wars" class="img-fluid rounded" loading="lazy">
             </li>
-            <br><br>
-            <li>
+            <li class="col">
                 <h3>Rocky (1976)</h3>
-                <img src="./imagenes/Rocky.jpg.jpeg" alt="poster de rocky" style=width:250px>
+                <img src="./imagenes/Rocky.jpg.jpeg" alt="Póster de la película Rocky" class="img-fluid rounded" loading="lazy">
             </li>
         </ul>
-        <!-- <img class="body" src="./imagenes proyecto/fondo.jpg"> -->
+    </main>
 
-    </center>
-</div>
+    <footer>
+        <p>© 2026 - Proyecto de Analista Programador</p>
+        <p>Dirección: Rincón 232 - Rosario</p>
+    </footer>
 </body>
-<footer>
-    <p>© 2026 - Proyecto de Analista Programador</p>
-    <p>Dirección: Rincón 232 - Rosario</p>
-</footer>
+
 </html>

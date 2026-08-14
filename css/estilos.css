@@ -1,5 +1,15 @@
-/* Estilos de pagina principal */
 
+:root {
+    --color-fondo: #0d0d0d;
+    --color-texto: #ffffff;
+    --color-acento: #e5ff00;
+    --color-acento-2: #00ffff;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-acento-2);
+    outline-offset: 2px;
+}
 body {
     text-align: justify;
     font-family: "Press Start 2P", system-ui;
@@ -16,7 +26,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
-    margin-bottom: -50px;
+    margin-bottom: 0.5rem;
     margin-top: -60px;
 }
 
@@ -28,11 +38,10 @@ font-size: 3rem;
 color: #e5ff00; 
 text-align: center;
 margin-top: -10px;
-margin-bottom: -50px;
+margin-bottom: 0.5rem;
 }
 
 a {
-    margin-top: -50px;
     text-decoration:none;
     color:#000000;
     background:#e5ff00;
@@ -133,6 +142,18 @@ footer{
 
  }
 
-
+@media (max-width: 576px) {
+    body {
+        padding: 0.5rem;
+    }
+    a {
+        display: block;
+        margin: 6px auto;
+        max-width: 220px;
+    }
+    .campos {
+        font-size: 12px;
+    }
+}
 
 
