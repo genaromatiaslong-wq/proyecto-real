@@ -31,7 +31,7 @@ export class Alquiler {
         return {
             codigo: this.#codigo,
             fecha: this.#fecha,
-            pelicula: this.#pelicula, // objeto plano { codigo, nombre, ... }
+            pelicula: this.#pelicula, 
             funcionario: this.#funcionario,
             cantidad: this.#cantidad,
             total: this.#total

@@ -1,146 +1,144 @@
-
 :root {
     --color-fondo: #0d0d0d;
     --color-texto: #ffffff;
     --color-acento: #e5ff00;
     --color-acento-2: #00ffff;
+    --fuente-titulo: "Monoton", sans-serif;
+    --fuente-subtitulo: "Bungee Shade", sans-serif;
+    --fuente-texto: "Press Start 2P", system-ui;
+    --radio-borde: 8px;
+    --transicion: 0.3s;
 }
 
-:focus-visible {
-    outline: 3px solid var(--color-acento-2);
-    outline-offset: 2px;
+* {
+    box-sizing: border-box;
 }
+
 body {
     text-align: justify;
-    font-family: "Press Start 2P", system-ui;
+    font-family: var(--fuente-texto);
     font-weight: 400;
     font-style: normal;
-    margin: 10;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--color-fondo);
     background-image: url("../imagenes/fondo.jpg.jpeg");
-    color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color-texto);
 }
+
 .titulo-cinecito {
-    color: #e5ff00;
+    color: var(--color-acento);
     letter-spacing: 6px;
-    font-family: "Monoton", sans-serif;
+    font-family: var(--fuente-titulo);
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-align: center;
     margin-bottom: 0.5rem;
-    margin-top: -60px;
 }
 
 .nombre {
-font-family: "Bungee Shade", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 3rem;
-color: #e5ff00; 
-text-align: center;
-margin-top: -10px;
-margin-bottom: 0.5rem;
+    font-family: var(--fuente-subtitulo);
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.2rem, 4vw, 3rem);
+    color: var(--color-acento);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 a {
-    text-decoration:none;
-    color:#000000;
-    background:#e5ff00;
-    padding:10px 18px;
-    margin:0 8px;
-    border:2px solid #00ffff;
-    border-radius:8px;
-    font-family:"Press Start 2P", cursive;
-    font-size:12px;
-    transition:.3s;
+    text-decoration: none;
+    color: #000000;
+    background: var(--color-acento);
+    padding: 10px 18px;
+    margin: 0 8px;
+    border: 2px solid var(--color-acento-2);
+    border-radius: var(--radio-borde);
+    font-family: var(--fuente-texto);
+    font-size: 12px;
+    transition: var(--transicion);
+    display: inline-block;
 }
 
-a:hover{
-    background:#00ffff;
-    color:black;
-    box-shadow:0 0 15px #00ffff;
+a:hover,
+a:focus-visible {
+    background: var(--color-acento-2);
+    color: black;
+    box-shadow: 0 0 15px var(--color-acento-2);
 }
 
 .cartelera {
     text-align: center;
     font-size: 2rem;
+    margin-top: 1.5rem;
 }
 
 .inicio {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color:#00aaff
+    font-family: "Courier New", Courier, monospace;
+    color: #00aaff;
 }
 
-.opciones{
-    text-align: justify;
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.lista {
-  display: flex;      
-  list-style: none;   
-  gap: 20px;           
-  padding: 0;   
-    align-items:flex-start;
-}
-
-.lista-peliculas{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
+.lista-peliculas {
     padding: 0;
 }
 
-.lista-peliculas li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 220px;
+.lista-peliculas li {
+    text-align: center;
 }
 
-.lista-peliculas h3{
-    text-align: center;
+.lista-peliculas h3 {
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
-.lista-peliculas img{
-    width: 180px;
-}
-
-footer{
-    margin-top: 50px;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
-    color: #fff56a;
-    font-family: "Press Start 2P", cursive;
-    font-size: 12px;
-    border-top: 3px solid #fff56a;
+.titulo {
+    font-family: var(--fuente-subtitulo);
+    color: var(--color-acento);
+    font-size: clamp(1rem, 3vw, 1.8rem);
 }
 
 .campos {
-    text-align: center;
-    font-size: 12px;
+    text-align: left;
+    font-size: 13px;
 }
 
-.botones input{
-    text-decoration:none;
-    color:#000000;
-    background:#e5ff00;
-    padding:10px 18px;
-    margin:0 8px;
-    border:2px solid #00ffff;
-    border-radius:8px;
-    font-family:"Press Start 2P", cursive;
-    font-size:12px;
-    transition:.3s;
-     color:black;
-    box-shadow:0 0 15px #00ffff;
+.campos label {
+    color: var(--color-acento);
+}
 
- }
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.botones .btn {
+    font-family: var(--fuente-texto);
+    font-size: 11px;
+}
+
+
+:focus-visible {
+    outline: 3px solid var(--color-acento-2);
+    outline-offset: 2px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff56a;
+    font-family: var(--fuente-texto);
+    font-size: 12px;
+    border-top: 3px solid #fff56a;
+}
 
 @media (max-width: 576px) {
     body {
@@ -155,5 +153,3 @@ footer{
         font-size: 12px;
     }
 }
-
-
