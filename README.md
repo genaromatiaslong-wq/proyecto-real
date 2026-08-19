@@ -47,3 +47,11 @@ clic derecho sobre principal.html → "Open with Live Server".
 - Accesibilidad (aria-label, aria-live, :focus-visible)
 - Seguridad básica (escape de HTML, Content-Security-Policy)
 - Responsive Design
+
+
+##URL Sitio Web
+-https://cinecitovideoclub.netlify.app/
+
+##Link Repositorio
+-
+https://github.com/genaromatiaslong-wq/proyecto-real.git
